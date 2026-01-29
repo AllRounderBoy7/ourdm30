@@ -3,6 +3,7 @@ import { Phone, Video, MoreVertical, Pin, VolumeX } from 'lucide-react'
 import { useChat } from '@/context/ChatContext'
 import { useAuth } from '@/context/AuthContext'
 import { cn } from '@/lib/utils'
+import { MessageSearch } from './MessageSearch'
 
 export const ChatHeader: React.FC = () => {
   const { currentConversation, startCall, pinConversation, muteConversation } = useChat()
@@ -71,6 +72,7 @@ export const ChatHeader: React.FC = () => {
       </div>
 
       <div className="flex items-center gap-2">
+        <MessageSearch />
         <button
           onClick={() => startCall('voice')}
           className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"

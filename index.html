@@ -1,15 +1,73 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary Meta Tags -->
     <title>Ultra Chat - Real-time Chat & Calling</title>
+    <meta name="title" content="Ultra Chat - Real-time Chat & Calling" />
+    <meta name="description" content="Ultra Chat - Real-time chat and calling app with advanced features. Send messages, make voice and video calls, share media, and more." />
+    <meta name="keywords" content="chat, messaging, video call, voice call, real-time, supabase, webrtc" />
+    <meta name="author" content="Ultra Chat" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Theme & PWA -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Ultra Chat" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Prevent FOUC (Flash of Unstyled Content) -->
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+      html.loaded {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="h-full antialiased">
+    <div id="root" class="h-full"></div>
+    <noscript>
+      <div style="padding: 20px; text-align: center; background: #f3f4f6;">
+        <h1>JavaScript Required</h1>
+        <p>Please enable JavaScript to use this application.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Remove loading class when page loads
+      document.addEventListener('DOMContentLoaded', () => {
+        document.documentElement.classList.add('loaded');
+      });
+      // Fallback if DOMContentLoaded already fired
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        document.documentElement.classList.add('loaded');
+      }
+    </script>
   </body>
 </html>
 

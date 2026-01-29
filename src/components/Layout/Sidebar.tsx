@@ -10,7 +10,7 @@ export const Sidebar: React.FC = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
-    <div className="w-80 h-full flex flex-col bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl border-r border-gray-200 dark:border-gray-700">
+    <div className="w-80 h-full flex flex-col bg-white/50 dark:bg-gray-800/50 backdrop-blur-xl border-r border-gray-200 dark:border-gray-700 max-w-full">
       {/* Header */}
       <div className="h-16 px-4 flex items-center justify-between border-b border-gray-200 dark:border-gray-700">
         <h1 className="text-xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">

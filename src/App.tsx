@@ -9,10 +9,12 @@ import { ChatView } from '@/components/Layout/ChatView'
 import { CallScreen } from '@/components/Call/CallScreen'
 import { IncomingCall } from '@/components/Call/IncomingCall'
 import { useOnlineStatus } from '@/hooks/useOnlineStatus'
+import { useNotification } from '@/hooks/useNotification'
 
 const AppContent: React.FC = () => {
   const { user, loading } = useAuth()
   useOnlineStatus()
+  useNotification()
 
   if (loading) {
     return (

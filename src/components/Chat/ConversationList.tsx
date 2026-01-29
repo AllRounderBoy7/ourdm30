@@ -79,7 +79,7 @@ export const ConversationList: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto scrollbar-thin">
         {filteredConversations.map((conversation) => {
           const isPinned = conversation.participants?.find(p => p.user_id === user?.id)?.pinned || false
           const isMuted = conversation.participants?.find(p => p.user_id === user?.id)?.muted || false

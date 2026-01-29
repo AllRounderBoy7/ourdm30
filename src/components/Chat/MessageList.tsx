@@ -41,7 +41,7 @@ export const MessageList: React.FC = () => {
     <div
       ref={messagesContainerRef}
       onScroll={handleScroll}
-      className="flex-1 overflow-y-auto p-4 space-y-4"
+      className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-thin"
     >
       {messages.map((message) => {
         const own = isOwnMessage(message)
