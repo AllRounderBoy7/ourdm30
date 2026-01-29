@@ -20,7 +20,6 @@
     "react-use": "^17.4.2",
     "date-fns": "^3.0.6",
     "emoji-picker-react": "^4.5.16",
-    "react-audio-waveform": "^1.0.0",
     "browser-image-compression": "^2.0.2",
     "clsx": "^2.1.0",
     "tailwind-merge": "^2.2.0"
