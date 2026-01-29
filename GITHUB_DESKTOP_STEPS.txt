@@ -1,0 +1,50 @@
+# 📁 kkk Folder को GitHub Desktop में Add करने के Steps
+
+## Step 1: GitHub Desktop खोलें
+- Desktop पर GitHub Desktop icon click करें
+- या Start Menu से "GitHub Desktop" search करें
+
+## Step 2: Local Repository Add करें
+1. GitHub Desktop में top menu में "File" click करें
+2. "Add Local Repository" click करें
+3. एक popup window खुलेगा
+
+## Step 3: kkk Folder Select करें
+1. Popup में "Choose" button click करें
+2. File Explorer खुलेगा
+3. यह path पर जाएं:
+   C:\Users\SAMEER KHAN\Downloads\kkk
+4. "kkk" folder select करें
+5. "Select Folder" या "OK" click करें
+
+## Step 4: Add करें
+1. GitHub Desktop में "Add repository" button click करें
+2. ✅ Done! kkk folder add हो गया
+
+## Step 5: Commit करें (अगर needed)
+1. Left side में सभी files दिखेंगी
+2. Bottom में "Summary" box में message type करें: "Initial commit"
+3. "Commit to main" button click करें
+
+## Step 6: GitHub पर Publish करें
+1. Top में "Publish repository" button दिखेगा
+2. Click करें
+3. Repository name: ultra-chat-app (या कोई भी name)
+4. Description (optional): Real-time Chat App
+5. ✅ "Keep this code private" - uncheck करें (अगर public चाहिए)
+6. "Publish repository" click करें
+
+## ✅ DONE!
+अब सभी files GitHub पर upload हो जाएंगी proper structure के साथ!
+
+---
+
+## अगर "Add Local Repository" option नहीं दिख रहा:
+1. GitHub Desktop में "File" → "Options" → "Git"
+2. "Git executable" path check करें
+3. या "File" → "New Repository" → "Add" tab select करें
+
+## अगर Folder नहीं दिख रहा:
+- File Explorer में "View" → "Show hidden files" check करें
+- या directly path type करें: C:\Users\SAMEER KHAN\Downloads\kkk
+

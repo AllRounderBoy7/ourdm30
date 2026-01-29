@@ -1,0 +1,36 @@
+# 🚀 SIMPLE COPY-PASTE COMMANDS - GitHub Push करने के लिए
+
+## Step 1: GitHub पर Repository बनाएं
+1. github.com पर जाएं
+2. Top right में "+" → "New repository"
+3. Name: ultra-chat-app
+4. README UNCHECK करें
+5. Create repository click करें
+6. URL copy करें (जैसे: https://github.com/YOUR_USERNAME/ultra-chat-app.git)
+
+## Step 2: VS Code Terminal में ये Commands Copy-Paste करें
+
+# Command 1: Git initialize
+git init
+
+# Command 2: Files add करें
+git add .
+
+# Command 3: Commit करें
+git commit -m "Initial commit"
+
+# Command 4: GitHub link add करें (अपना URL replace करें)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
+# Command 5: Main branch set करें
+git branch -M main
+
+# Command 6: Push करें
+git push -u origin main
+
+## अगर Password मांगे:
+1. GitHub.com → Settings → Developer settings → Personal access tokens
+2. Generate new token → repo permission select करें
+3. Token copy करें
+4. Password की जगह token paste करें
+
